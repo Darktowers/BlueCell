@@ -1,0 +1,45 @@
+$(document).ready(function(){
+
+$('.clientes-Slider').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:3000,
+    responsive:{
+        0:{
+            items:1
+        },
+        700:{
+            items:3
+        },
+        1000:{
+            items:6
+        },
+        1200:{
+            items:6
+        }
+    }
+})
+$('.sliderPortatil').owlCarousel({
+    loop:true,
+    margin:1,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    animateOut: 'fadeOut',
+    autoplayTimeout:3000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+})

@@ -1,0 +1,432 @@
+@import "nib"
+@import "nib/vendor"
+@import "owl.carousel.styl"
+@import "normalize.styl"
+vendors = official
+//Animaciones
+@keyframes cloud-right {
+  from {
+    transform: translate(10%,0);
+  }
+  to {
+    transform: translate(-100em,0);
+  }
+}
+@keyframes cloud-left {
+  from {
+    
+    transform: translate(-10%,0);
+  }
+  to {
+    transform: translate(100em,0);
+  }
+}
+.cloud
+    position: absolute
+.cl1
+    top 5em
+    animation:cloud-right 40s infinite alternate;
+    animation-delay: -10s;
+    right: 0
+.cl2
+    top 15em
+    animation:cloud-left 25s infinite alternate;
+    left: 0
+    animation-delay: -3s;
+.cl3
+    top 18em
+    animation:cloud-right 35s infinite alternate;
+    right: 0
+    
+.cl4
+    top 25em
+    animation:cloud-left 25s infinite alternate; 
+    left: 0
+
+//Movile First Design
+negro = #888888
+contacto = #4e4e4e
+azul = #08b8e1  
+back = #7fc7ec
+.down
+    text-align: center
+    position: relative;
+    z-index: 1
+    i
+        color: white;
+        font-size: 3em;
+        margin: 0;
+        padding: 0;
+body
+html
+    font-family helvetica
+    color contacto
+h1
+    font-family: HelveticaH
+.landing
+    background: azul;
+    &-Back
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        overflow: hidden
+        height: 306px;
+        background: back;
+        &-Img
+            width: 155%;
+            position: absolute;
+            left: -59px;
+            top: 24px
+    &-Header
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1em;
+        background: back
+        max-width: 950px;
+        margin: 0 auto;
+        padding-left: 1em;
+        padding-right: 1em;
+        &-Logo
+            width: 85px;
+            align-self: flex-end;
+            padding-bottom: .5em;
+            &-Img
+                width: 100%;
+        &-Cert
+            img
+                width: 48px;
+    &-Content
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &-Banners
+            &-Title
+                max-width: 344px;
+                margin: 0 auto;
+                h1
+                    color: white;
+                    font-size: 2.4em;
+                    margin: .35em 0 0 0;
+                .lineCont
+                    display: flex;
+                    position: relative;
+                    top: -10px;
+                    .line1
+                        border-bottom: 1px solid #fff;
+                        width: 5%;
+                    img
+                        position: relative;
+                        top: 9px;
+                        width: 15px;
+                        height: 11px;
+                    .line2
+                        border-bottom: 1px solid #fff;
+                        width: 88%;
+        &-Portatil-Text
+            p
+                font-size: .9em;
+                color: white;
+                margin: 0.5em 0;
+            .line
+                border-bottom: 1px solid;
+                padding-bottom: .8em;
+                margin: .5em 0;
+        &-Portatil
+            position: relative;
+            width: 100%;
+            max-width: 334px;
+            &-Content
+                position: relative;
+                display: flex;
+                height: 198px;
+                justify-content: center;
+                align-items: center;
+                &-Item
+                    display: flex;
+                    max-width: 318px;
+                    justify-content: center;
+                    margin-bottom: 2em;
+                    align-items: center;
+                    padding-top: 2em;
+                    margin: 0 auto
+                    
+                    img
+                        width: 115px;
+                        height: 115px;
+                        margin-right: .8em;
+                        margin-left: .8em;
+                        
+                    .text
+                        font-size: .8em;
+                        max-width: 100px;
+                        h3
+                            font-size: 1.5em;
+                            color: #575c6d;
+                            margin: .1em 0;
+                        p
+                            margin: 0;
+                            font-size: .9em
+            &-Img
+                width: 100%
+                position: absolute
+
+        &-Form
+            background: white
+            width: 100%
+            max-width: 400px;
+            h2
+                background: contacto;
+                margin: 0;
+                color: white;
+                padding: .5em 1em;
+                font-size: 2em;
+                position relative
+                &:before
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    border-style: solid;
+                    border-width: 18px 18px 0 18px;
+                    border-color: #4e4e4e transparent transparent transparent;
+                    bottom: -18px;
+            form
+                display: flex;
+                flex-direction: column;
+                max-width: 345px;
+                margin: 0 auto;
+                padding-top: 1.5em;
+                padding-bottom: 1em;
+                input[type=text]
+                input[type=email]
+                input[type=phone]
+                    padding: .5em .8em;
+                    margin-bottom: 2em;
+                    background: #f9f9f9;
+                    border: 0;
+                .container
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    label
+                        font-size: 0.8em;
+                    input[type=submit]
+                        background: #08b8e1;
+                        border: 0;
+                        padding: .5em 2em;
+                        font-weight: bold;
+                        color: white;
+                        transition all .3s ease-in-out
+                        border: 1px solid transparent
+                        &:hover
+                            background: white;
+                            color: #08b8e1;
+                            border: 1px solid 
+.clientes
+    background: #f9f9f9;
+    h2
+        font-family: HelveticaL
+        text-align: center
+        color back
+        background: white;
+        margin: 0;
+        padding: .5em 0;
+        font-size: 1.7em;
+    &-Slider
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        max-width: 950px;
+        margin: 0 auto;
+        &-Item
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 170px
+        .angle-left
+            background-image: url(../img/arrow-left.png);
+            width: 18px;
+            height: 35px;
+            cursor pointer            
+        .angle-right
+            background-image: url(../img/arrow-right.png);
+            width: 18px;
+            height: 35px;
+            cursor pointer
+.footer
+    background: #323232;
+    b
+        color: #bebebe
+    &-Container
+        display: flex;
+        align-items: center;
+        color: #9b9b9b;
+        padding: 2em 0;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 950px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        button
+            width: 190px;
+            background: none;
+            border: 1px solid;
+            padding: .5em;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-top: .7em;
+            transition all .3s ease-in-out
+            &:hover
+                background: #9b9b9b;
+                color: #323232;
+        &-Social
+            font-size: 1.3em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding-top: 1em;
+            justify-content: flex-end;
+            a
+                border: 2px solid;
+                border-radius: 50%;
+                font-weight: bold;
+                color: #9b9b9b;
+                margin-left: .5em;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                transition all .3s ease-in-out
+                &:hover
+                    background: #9b9b9b;
+                    color: #323232;
+        &-Info
+            display: flex;
+            font-size: 1.2em;
+            flex-wrap: wrap;
+            justify-content: center;
+            .cell
+                margin-left: .5em;
+                border-right: 1px solid;
+                padding-right: .5em;
+            p
+                margin-left: .5em;
+        &-SiteMap
+            display: flex;
+            font-size: .9em;
+            flex-wrap: wrap;
+            justify-content: center;
+            a
+                text-decoration: none;
+                color: #9b9b9b;
+                padding-right: .5em;
+                p
+                    margin: 0
+                .cell
+                    border-right: 1px solid;
+                    padding-right: .3em;
+
+
+
+
+
+
+@media (max-width: 768px)
+    .movil
+        display block
+    .desk
+        display: none
+    .footer
+        &-Container
+            justify-content: center
+            &-Social
+                justify-content: center
+
+@media (min-width: 768px)
+
+    .landing-Header
+        margin-bottom: 1em;
+    .landing-Header-Cert 
+        img
+            width: 60px;
+
+    .landing-Back
+        height: 444px
+        &-Img
+            width: 100%
+            left: 0
+            right: 0
+            top 0
+    .landing-Header-Logo
+        width: 120px;
+
+
+            
+@media (min-width:980px)
+    .landing-Content-Portatil-Content-Item 
+        .text
+            font-size: 1em
+            max-width: 140px
+    .landing-Content-Portatil
+        max-width: 533px;
+        position: relative;
+        left: -2em;
+    .landing-Content-Portatil-Content-Item
+        padding-top: 5em; 
+        img
+            width: 140px;
+            height: 140px;
+    .landing-Content-Banners-Title
+        max-width: 400px;
+    .landing-Content-Banners-Title 
+        .lineCont 
+            .line2
+                width: 75%;
+    .landing-Content-Portatil-Text 
+        p
+            font-size: 1em;
+            border-bottom: 0 !important;
+    .movil
+        display none
+    .desk
+        display: block
+    .landing-Back
+        height: 638px;
+        &-Img
+            width: 100%
+            left: 0
+            right: 0
+            top 0
+    .landing-Content
+        flex-direction: row;
+        max-width: 950px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: flex-start;
+        .container
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+
+    
+
+
+
+
+
+
+
+                
+
+
+    
